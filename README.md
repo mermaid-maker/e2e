@@ -1,5 +1,7 @@
 # End 2 End Tests
 
-This empty repo is used to perform end 2 end tests for the mermaid-maker action. It is not intended to be used for anything else.
+This repo houses end-to-end tests helpers to help test the mermaid-maker action. 
 
-See ya~!
+Composite actions (under `.github/actions` directory) are mainly used to avoid rewriting workflow code.
+
+Corresponding python files (like `add_mmd_file.py`) are used in the aforementioned actions to better test and write slighly more complex logic. 
