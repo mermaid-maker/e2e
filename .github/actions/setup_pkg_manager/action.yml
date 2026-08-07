@@ -9,15 +9,10 @@ inputs:
 runs:
   using: composite
   steps:
-    - if: ${{inputs.pkg_manager == 'npm' || inputs.pkg_manager == 'yarn'}}
+    - if: ${{inputs.pkg_manager == 'npm'}}
       uses: actions/setup-node@v7.0.0
       with:
         node-version: 24
-    - if: ${{inputs.pkg_manager == 'yarn'}}
-      run: |
-        corepack enable
-        yarn set version stable
-      shell: bash
     - if: ${{inputs.pkg_manager == 'pnpm'}}
       uses: "pnpm/setup@main"
       with:
