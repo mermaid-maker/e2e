@@ -13,6 +13,9 @@ runs:
       uses: actions/setup-node@v7.0.0
       with:
         node-version: 24
+    - if: ${{inputs.pkg_manager == 'yarn'}}
+      run: yarn set version stable
+      shell: bash
     - if: ${{inputs.pkg_manager == 'pnpm'}}
       uses: "pnpm/setup@main"
       with:
