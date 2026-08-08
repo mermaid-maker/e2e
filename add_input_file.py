@@ -24,6 +24,6 @@ sequenceDiagram
     Bob-->>John: Jolly good!"""
 
 with open(
-    f"{environ['OUTPUT_DIR']}/{environ['BASENAME']}.f'{environ['EXTENSION']}", "w"
+    f"{environ['OUTPUT_DIR']}/{environ['BASENAME']}.{environ['EXTENSION']}", "w"
 ) as file:
     print(sample_file, file=file)
