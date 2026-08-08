@@ -1,3 +1,3 @@
-# try out add_mmd_file.py
-add_mmd_file:
-    env OUTPUT_DIR='.' BASENAME='sample' python add_mmd_file.py
+# try out add_input_file.py
+add_input_file:
+    env OUTPUT_DIR='.' EXTENSION='mmd' BASENAME='sample' python add_input_file.py

@@ -1,6 +1,6 @@
 from os import environ
 
-sample_mmd = """---
+sample_file = """---
 config: 
     theme: 'base'
     themeVariables:
@@ -23,5 +23,7 @@ sequenceDiagram
     John->>Bob: How about you?
     Bob-->>John: Jolly good!"""
 
-with open(f"{environ['OUTPUT_DIR']}/{environ['BASENAME']}.mmd", "w") as file:
-    print(sample_mmd, file=file)
+with open(
+    f"{environ['OUTPUT_DIR']}/{environ['BASENAME']}.f'{environ['EXTENSION']}", "w"
+) as file:
+    print(sample_file, file=file)
