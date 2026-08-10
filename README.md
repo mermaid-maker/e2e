@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> The assets in this repo have been added to the action repo at: [mermaid-maker/action](https://github.com/mermaid-maker/action). As such, this repo has been deprecated as it's no longer needed
+
 # End 2 End Tests
 
 This repo houses end-to-end tests helpers to help test the mermaid-maker action. 
